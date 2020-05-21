@@ -30,9 +30,7 @@ function refreshView(){
         var url = "https://public.tableau.com/views/TheTime/Dashboard1?:display_count=y&:origin=viz_share_link";
         var options = {
             width: 900,
-            height: 600,
-            hideTabs: true,
-            hideToolbar: true
+            height: 600
             }
         viz = new tableau.Viz(placeholderDiv, url, options);
         }
