@@ -4,26 +4,21 @@
 <!-- Importing Tableau API -->
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
 
-    
 <body onload="initialize();">
-       
+     
     <div>API embed - Autorefresh every 5 seconds</div>
     
     <div id="myViz">
         </div>
     </div>
 
-
 </body>
 <script>
 
 var viz;
-
 function refreshView(){
 	viz.refreshDataAsync();
 }
-    
-    
     function initialize() {
 
         var placeholderDiv = document.getElementById("myViz");
@@ -38,6 +33,4 @@ function refreshView(){
     setInterval(refreshView,5000);
 
 </script>
-
-
 </html>
